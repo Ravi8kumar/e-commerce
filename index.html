@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header with Image</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><b style="color: rgb(139, 137, 21); font-family: cursive;">B</b><b>R</b><b style="color: red;">A</b><b>N</b><b style="color: blue;">D</b><b style="color: white;font-size: 40px; font-family: cursive;"><i>N</i></b><b style="color: blueviolet;">E</b><b>W</b></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">
+                <span>&#9776;</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Full-width image section with overlay -->
+    <section class="hero-image">
+        <img src="https://img-aws.ehowcdn.com/877x500/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/50e222351fc54db4a1195f289a57abb6.jpg" alt="Hero Image">
+        
+        <!-- Overlay content -->
+        <div class="overlay">
+            <h1>SHOP OUR NEW COLLECTION</h1>
+            <p>FROM HIGH TO LOW, CLASSIC OR MODERN, WE HAVE YOU COVERED</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- New Arrival Section -->
+    <section class="new-arrivals">
+        <h2>New Arrivals</h2>
+
+        <!-- Clickable labels for Modern and Classic -->
+        <div class="category-selection">
+            <span class="category" id="modern-category" onclick="showCategory('modern')">Modern</span>
+            <span class="category" id="classic-category" onclick="showCategory('classic')">Classic</span>
+        </div>
+
+        <!-- Images for Modern Category -->
+        <div class="arrival-images" id="modern" class="hidden">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dCUyMHNoaXJ0fGVufDB8fDB8fHww" alt="Modern Product 1">
+                <div class="product-info">
+                    <p class="brand">Brand: Modern Co.</p>
+                    <p class="price">&#8377;199.99</p>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dCUyMHNoaXJ0fGVufDB8fDB8fHww" alt="Modern Product 2">
+                <div class="product-info">
+                    <p class="brand">Brand: Modern Co.</p>
+                    <p class="price">&#8377;249.99</p>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dCUyMHNoaXJ0fGVufDB8fDB8fHww" alt="Modern Product 3">
+                <div class="product-info">
+                    <p class="brand">Brand: Modern Co.</p>
+                    <p class="price">&#8377;299.99</p>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://nobero.com/cdn/shop/files/og.jpg?v=1722234051" alt="Modern Product 4">
+                <div class="product-info">
+                    <p class="brand">Brand: Modern Co.</p>
+                    <p class="price">&#8377;349.99</p>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Images for Classic Category -->
+        <div class="arrival-images hidden" id="classic">
+            <div class="product">
+                <img src="https://i.ebayimg.com/images/g/zPUAAOSwmS5i3nhv/s-l400.jpg" alt="Classic Product 1">
+                <div class="product-info">
+                    <p class="brand">Brand: Classic Co.</p>
+                    <p class="price">&#8377;129.99</p>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/NM/SJ/MY-38891972/party-wear-jodhpuri-suit-250x250.jpg" alt="Classic Product 2">
+                <div class="product-info">
+                    <p class="brand">Brand: Classic Co.</p>
+                    <p class="price">&#8377;159.99</p>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl2zG_MCoR__NZzcZE17UumqaBb1pQD-Prcv6l8a1mGueNj6jFjEFXgKQx6MYusqi2Umw&usqp=CAU" alt="Classic Product 3">
+                <div class="product-info">
+                    <p class="brand">Brand: Classic Co.</p>
+                    <p class="price">&#8377;199.99</p>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://i.etsystatic.com/51784681/r/il/bcc240/6211686074/il_300x300.6211686074_lk4v.jpg" alt="Classic Product 4">
+                <div class="product-info">
+                    <p class="brand">Brand: Classic Co.</p>
+                    <p class="price">&#8377;219.99</p>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Products Section -->
+    <section class="special-products">
+        <h3>Special Products</h3>
+        <hr class="separator">
+        
+        <div class="special-product-images">
+            <div class="product">
+                <img src="https://n-img0.junaroad.com/uiproducts/18347088/zoom_0-1651036557.jpg" alt="Special Product 1">
+                <div class="product-info">
+                    <p class="brand">Brand: Premium Co.</p>
+                    <p class="price">&#8377;399.99</p>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://i.etsystatic.com/19677262/r/il/8bf5f4/4332610423/il_570xN.4332610423_fekc.jpg" alt="Special Product 2">
+                <div class="product-info">
+                    <p class="brand">Brand: Premium Co.</p>
+                    <p class="price">&#8377;449.99</p>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://i5.walmartimages.com/seo/Mens-Suit-Slim-Fit-One-Button-Solid-Tuxedo-Acket-Business-Suits-Wedding-Party-Homecoming-For-Men-Court-plus-Size-Plaid-Night_82ba308e-f732-4684-8f1a-dafcee455224.1c5d28cfcb6d58c23fd0344071f4ffe4.jpeg" alt="Special Product 3">
+                <div class="product-info">
+                    <p class="brand">Brand: Premium Co.</p>
+                    <p class="price">&#8377;499.99</p>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://i5.walmartimages.com/seo/3pcs-Men-Slim-Fit-Suits-Casual-Blazer-Jackets-Business-Wedding-Pants-Clearance-Hot-Sale-Men-s-And-Groom-Dresses-Coat-Vest-Trousers_583b193f-c1fa-4dab-a90c-e8af46811391.d9e6182298c827c36abe684d3577404e.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Special Product 4">
+                <div class="product-info">
+                    <p class="brand">Brand: Premium Co.</p>
+                    <p class="price">&#8377;549.99</p>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom-images">
+        <h2>Our Exclusive Collection</h2>
+        <div class="image-gallery">
+            <div class="slider">
+                <img class="slide" src="https://i5.walmartimages.com/seo/3pcs-Men-Slim-Fit-Suits-Casual-Blazer-Jackets-Business-Wedding-Pants-Clearance-Hot-Sale-Men-s-And-Groom-Dresses-Coat-Vest-Trousers_583b193f-c1fa-4dab-a90c-e8af46811391.d9e6182298c827c36abe684d3577404e.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Exclusive Image 1">
+                <img class="slide" src="https://m.media-amazon.com/images/I/71NUtBVfqKL.jpg" alt="Exclusive Image 2">
+                <img class="slide" src="https://m.media-amazon.com/images/I/412BykW5FnL._AC_UY1100_.jpg" alt="Exclusive Image 3">
+                <img class="slide" src="https://5.imimg.com/data5/ANDROID/Default/2023/9/340551075/TQ/BF/UW/191129175/product-jpeg-500x500.jpg" alt="Exclusive Image 4">
+                <img class="slide" src="https://images-cdn.ubuy.co.in/6537e67fe4bd411f9928f630-youthup-mens-3-piece-suit-1-button-slim.jpg" alt="Exclusive Image 4">
+                <img class="slide" src="https://m.media-amazon.com/images/I/61LhJ8alRbL._AC_UY1100_.jpg" alt="Exclusive Image 4">
+            </div>
+            <button class="prev-arrow">&#10094;</button>
+            <button class="next-arrow">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+
+
+<div class="footer">
+    <div class="footer_container">
+      <!-- Logo Section -->
+      <div class="footer_logo_section">
+        <h1 class="footer_logo">
+            <a href="#" style="text-decoration: none;"><b style="color: rgb(139, 137, 21); font-family: cursive">B</b><b style="color: white;">R</b><b style="color: red;">A</b><b style="color: white;">N</b><b style="color: blue;">D</b><b style="color: white;font-size: 40px; font-family: cursive;"><i>N</i></b><b style="color: blueviolet;">E</b><b style="color: white;">W</b></a>
+      
+        </h1>
+      </div>
+  
+      <!-- Footer Content Section -->
+      <div class="footer_content">
+        <div class="footer_child">
+          <h2 class="footer_heading">Quick Links</h2>
+          <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>About us</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer_child">
+          <h2 class="footer_heading">Contact us</h2>
+          <ul>
+            <li>No:123, Ram Street, Raju Nagar, Chennai</li>
+            <li>1234567890</li>
+            <li>brands@.com</li>
+          </ul>
+        </div>
+        <div class="footer_child footer_child4">
+          <h2 class="footer_heading">Follow us</h2>
+          <div class="social_container">
+            <div class="social_icon social_icon1"></div>
+            <div class="social_icon social_icon3"></div>
+            <div class="social_icon social_icon4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+    <script>
+        // Function to show category images based on click and highlight active category
+        function showCategory(category) {
+            // Hide both modern and classic images
+            document.getElementById('modern').classList.add('hidden');
+            document.getElementById('classic').classList.add('hidden');
+            
+            // Remove active class from both categories
+            document.getElementById('modern-category').classList.remove('active');
+            document.getElementById('classic-category').classList.remove('active');
+            
+            // Show selected category images
+            document.getElementById(category).classList.remove('hidden');
+            
+            // Add active class to the clicked category
+            if (category === 'modern') {
+                document.getElementById('modern-category').classList.add('active');
+            } else {
+                document.getElementById('classic-category').classList.add('active');
+            }
+        }
+
+        let currentIndex = 0; // The current index of the image
+        const slides = document.querySelectorAll('.image-gallery .slide'); // All the images
+        const totalSlides = slides.length; // Total number of slides
+
+        const prevButton = document.querySelector('.prev-arrow'); // Previous button
+        const nextButton = document.querySelector('.next-arrow'); // Next button
+
+        // Function to move the slider
+        function moveSlider() {
+            const slider = document.querySelector('.image-gallery .slider');
+            const offset = -currentIndex * 100; // Slide offset based on current index
+            slider.style.transform = `translateX(${offset}%)`; // Move the slider
+        }
+
+        // Event listeners for the previous and next arrows
+        prevButton.addEventListener('click', () => {
+            // Decrease currentIndex to show the previous image
+            currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+            moveSlider();
+        });
+
+        nextButton.addEventListener('click', () => {
+            // Increase currentIndex to show the next image
+            currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+            moveSlider();
+        });
+    </script>
+</body>
+</html>
